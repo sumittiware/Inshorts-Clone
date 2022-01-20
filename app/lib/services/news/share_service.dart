@@ -30,7 +30,7 @@ void convertWidgetToImageAndShare(BuildContext context, containerKey) async {
   try {
     await Share.shareFiles([filename],
         text:
-            'This message sent from *inshorts Clone* made by *Sanjay Soni*\nFork this repository on *Github*\n\n https://github.com/imSanjaySoni/Inshorts-Clone.');
+            'This message sent from *inshorts Clone* made by *Sumit Tiware*\nFork this repository on *Github*\n\n https://github.com/sumittiware/Inshorts-Clone.');
   } catch (e) {
     print('error: $e');
   }

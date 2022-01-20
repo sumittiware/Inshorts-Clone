@@ -35,7 +35,8 @@ class NewsFeedRepositoryImpl implements NewsFeedRepository {
 
     Response response = await Dio().get(url);
     if (response.statusCode == 200) {
-      List<Articles> articles = NewsModel.fromJson(response.data).articles;
+      List<Articles> articles =
+          NewsModel.fromJson(response.data).articles ?? [];
 
       provider.setDataLoaded(true);
       addArticlesToUnreads(articles);

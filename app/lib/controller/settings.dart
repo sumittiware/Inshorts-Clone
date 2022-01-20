@@ -36,21 +36,9 @@ class SettingsProvider extends ChangeNotifier {
     final langBox = Hive.box('settingsBox');
 
     switch (value) {
-      case "ಕನ್ನಡ":
-        langBox.put('activeLang', "ಕನ್ನಡ");
-        localeCode = "kn";
-        notifyListeners();
-
-        break;
       case "हिंदी":
         langBox.put('activeLang', "हिंदी");
         localeCode = "hi";
-        notifyListeners();
-
-        break;
-      case "मराठी":
-        langBox.put('activeLang', "मराठी");
-        localeCode = "mr";
         notifyListeners();
 
         break;
