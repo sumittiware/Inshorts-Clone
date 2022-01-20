@@ -30,10 +30,11 @@ def get_news(request):
     newsCards = soup.find_all(class_='news-card')
 
     if not newsCards:
+        print("HEre")
         return JsonResponse({
             "error":{
                 "status":status.HTTP_404_NOT_FOUND,
-                "message":"Unable to fetch data"
+                "message":"No Data found"
             }          
         })
 
