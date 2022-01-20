@@ -1,0 +1,78 @@
+name: inshort_clone
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  intl:
+  dio:
+  cupertino_icons: 
+  feather_icons_flutter: 
+  webview_flutter: 
+  flutter_bloc: ^7.2.0
+  equatable: 
+  hive:
+  hive_flutter:
+  path_provider: 
+  share_plus: ^3.0.4
+  provider:
+  photo_view: 
+  font_awesome_flutter: 
+  fluttertoast:
+  cached_network_image: 
+  permission_handler: ^8.3.0
+
+  # For Improving Code Quality
+  import_sorter: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # analyzer:
+  build_runner:
+  auto_route_generator:
+  hive_generator:
+  flutter_launcher_icons: 
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+    - assets/icons/
+    - assets/lang/en.json
+    - assets/lang/hi.json
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat/Montserrat-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Montserrat/Montserrat-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Montserrat/Montserrat-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Montserrat/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Montserrat/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Montserrat/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat/Montserrat-ExtraBold.ttf
+          weight: 800
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/logo.png"
