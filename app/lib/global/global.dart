@@ -8,5 +8,5 @@ class Global {
   ];
   static height(context) => MediaQuery.of(context).size.height;
   static width(context) => MediaQuery.of(context).size.width;
-  static String serverUrl = "http://192.168.43.220:8000/api/";
+  static String serverUrl = "http://server_ip-address:port/api/";
 }
